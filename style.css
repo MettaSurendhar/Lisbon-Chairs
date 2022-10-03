@@ -1,0 +1,341 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+/* Main color : #099268 #087f5b
+  Grey color : #adb5bd  #343a40*/
+
+/* All Elements  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+
+/* Body  */
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 18px solid #087d5b;
+}
+
+/* Container  */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Heading  */
+
+header,
+section {
+  margin-bottom: 96px;
+}
+
+h2 {
+  margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+
+/* --CSS GRID--  */
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+/* --BUTTON-- */
+
+.btn:link,
+.btn:visited {
+  background-color: #087d5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 100px;
+  /* font-size: 18px; */
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+  box-shadow: 0 0 10px 0 #38d9a9;
+}
+
+.btn:active {
+  box-shadow: 0 0 5px 0 #38d9a9;
+}
+
+/* Shop Button  */
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+/* Add to cart Button  */
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* --HEADER-- */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 64px;
+}
+
+.header-text-box {
+  align-self: center;
+}
+
+/* Header heading  */
+
+h1 {
+  margin-bottom: 32px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  font-weight: 800;
+  /* text-shadow: 0 0 3px rgba(0, 0, 0, 0.2); */
+}
+
+/* Header text  */
+
+.header-text {
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* Header image  */
+
+img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+/* --FEATURES-- */
+
+/* Features icon  */
+
+.features-icon {
+  fill: #087d5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 24px;
+}
+
+/* Feautures title  */
+
+.features-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+/* Features text  */
+
+.features-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* --TESTIMONIAL-- */
+
+/* Testimonial container   */
+
+.testimonial-section {
+  background-color: #087d5b;
+  color: #fff;
+  padding: 24px;
+  border-radius: 14px;
+}
+
+.testimonial-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+
+/* Testimonial heading  */
+
+.testimonial-box h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.testimonial-heading:hover {
+  text-shadow: 0 0 1px #fff;
+}
+
+/* Testimonial text  */
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #e6fcf5;
+}
+
+/* Testimonial author  */
+
+.testimonial-author {
+  color: #c3fae8;
+}
+
+/* Testimonial image  */
+
+.testimonial-img:hover {
+  box-shadow: 0 0 30px 0 #0ca678;
+}
+
+/* --CHAIRS-- */
+
+/* Cards  */
+
+.chair-box {
+  padding: 32px;
+  /* box-shadow: 20px 20px 20px 10px #000;
+  border-radius: 14px;
+  */
+}
+
+.chair {
+  box-shadow: 0px 20px 30px 0 rgba(158, 151, 151, 0.3);
+  border-radius: 0;
+  border-bottom-right-radius: 14px;
+  border-top-right-radius: 14px;
+}
+.chair:hover {
+  box-shadow: 0px 20px 30px 0 rgba(77, 74, 74, 0.3);
+}
+
+/* Chair image  */
+
+.chair-img {
+  border-radius: 0;
+  /* border-top-left-radius: 14px; */
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  /* border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; */
+}
+
+/* Card title  */
+
+h3 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+/* Chair details  */
+
+.chair-details {
+  list-style: none;
+  margin-bottom: 48px;
+}
+
+.chair-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chair-details li:last-child {
+  margin-bottom: 0;
+}
+
+/* Chair icon  */
+
+.chair-icon {
+  fill: #087d5b;
+  width: 24px;
+  height: 24px;
+}
+
+/* Chair price  */
+.chair-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+}
+
+/* --FOOTER-- */
+
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+}
+
+/* --MEDIA QUERIES--  */
+
+@media (max-width: 550px) {
+  body {
+    text-align: center;
+  }
+
+  .container {
+    width: 90%;
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .header-img {
+    width: 80%;
+    display: inline-block;
+    justify-self: center;
+  }
+
+  .grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 100px;
+    row-gap: 80px;
+  }
+
+  .features,
+  .chair {
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+  }
+
+  .media-testimonial,
+  header {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 80px;
+    margin-top: 64px;
+  }
+
+  .testimonial-box {
+    grid-column: 1/-1;
+    align-self: center;
+  }
+
+  footer {
+    line-height: 20px;
+  }
+}
