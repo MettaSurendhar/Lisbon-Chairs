@@ -6,6 +6,8 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 /* Main color : #099268 #087f5b
+   New color : #504AA7 #253361 #7A81EB #0C1E7F #3A4750 #303841 #1D242B #283739 #494953 #929AAB #CACACA #EEEEEE 
+   #393E46  #393E46 #01786e #005743
   Grey color : #adb5bd  #343a40*/
 
 /* All Elements  */
@@ -23,9 +25,10 @@ FONT SIZE SYSTEM (px)
 /* Body  */
 
 body {
+  background-color: #ffffff;
   font-family: "Inter", sans-serif;
   color: #343a40;
-  border-bottom: 18px solid #087d5b;
+  border-bottom: 18px solid #005743;
 }
 
 /* Container  */
@@ -60,7 +63,7 @@ h2 {
 
 .btn:link,
 .btn:visited {
-  background-color: #087d5b;
+  background-color: #005743;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -71,8 +74,8 @@ h2 {
 
 .btn:hover,
 .btn:active {
-  background-color: #099268;
-  box-shadow: 0 0 10px 0 #38d9a9;
+  background-color: #01786e;
+  box-shadow: 0 0 8px 0 #38d9a9;
 }
 
 .btn:active {
@@ -140,7 +143,7 @@ img {
 /* Features icon  */
 
 .features-icon {
-  fill: #087d5b;
+  fill: #005743;
   width: 32px;
   height: 32px;
   margin-bottom: 24px;
@@ -165,7 +168,7 @@ img {
 /* Testimonial container   */
 
 .testimonial-section {
-  background-color: #087d5b;
+  background-color: #005743;
   color: #fff;
   padding: 24px;
   border-radius: 14px;
@@ -206,7 +209,7 @@ img {
 /* Testimonial image  */
 
 .testimonial-img:hover {
-  box-shadow: 0 0 30px 0 #0ca678;
+  box-shadow: 0 0 30px 0 #01786e;
 }
 
 /* --CHAIRS-- */
@@ -269,7 +272,7 @@ h3 {
 /* Chair icon  */
 
 .chair-icon {
-  fill: #087d5b;
+  fill: #005743;
   width: 24px;
   height: 24px;
 }
@@ -287,7 +290,8 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
-  color: #495057;
+  color: #00745a;
+  font-weight: 500;
 }
 
 /* --MEDIA QUERIES--  */
